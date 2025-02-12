@@ -1,0 +1,52 @@
+const flights = [
+    { 
+        id: 1, 
+        logo: "https://1000logos.net/wp-content/uploads/2021/07/IndiGo-Logo.jpg", 
+        airline: "IndiGo", 
+        departure: "10:00 AM", 
+        arrival: "12:30 PM", 
+        duration: "2h 30m", 
+        price: "₹5,499", 
+        departureCity: "Delhi", 
+        stops: "1hr at Hyderabad", 
+        arrivalCity: "Mumbai", 
+        flightNumber: "IN-223", 
+        class: "Business", 
+        departureDate: "12/02/2025", 
+        arrivalDate: "12/02/2025", 
+        refundable: "Refundable" 
+    },
+    { 
+        id: 2, 
+        logo: "https://e7.pngegg.com/pngimages/179/939/png-clipart-air-india-logo-air-india-logo-icons-logos-emojis-iconic-brands.png", 
+        airline: "Air India", 
+        departure: "02:00 PM", 
+        arrival: "05:30 PM", 
+        duration: "3h 30m", 
+        price: "₹6,799", 
+        departureCity: "Chennai", 
+        arrivalCity: "Kolkata", 
+        flightNumber: "AI-238", 
+        class: "Economy", 
+        departureDate: "12/02/2025", 
+        arrivalDate: "12/02/2025", 
+        refundable: "Non-Refundable" },
+    { 
+        id: 3, 
+        logo: "https://logowik.com/content/uploads/images/spicejet5998.logowik.com.webp", 
+        airline: "SpiceJet", 
+        departure: "06:00 AM", 
+        arrival: "08:45 AM", 
+        duration: "2h 45m", 
+        price: "₹4,999", 
+        departureCity: "Mumbai", 
+        arrivalCity: "Delhi", 
+        flightNumber: "SG-37", 
+        class: "Business", 
+        departureDate: "12/02/2025", 
+        arrivalDate: "12/02/2025", 
+        refundable: "Refundable" 
+    },
+];
+
+export default flights;
