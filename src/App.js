@@ -1,11 +1,12 @@
-import { useThemeContext, ThemeProvider } from "./ThemeContext";
-import ThemeSwitcher from "./components/ThemeSwitcher";
-import MakeMyTripView from "./components/MakeMyTripUI";
-import GoibiboView from "./components/GoibiboUI";
-import PaytmView from "./components/PaytmUI";
-import MusafirView from "./components/MusafirUI";
-import YatraView from "./components/YatraUI";
+import { lazy } from "react";
+import { ThemeProvider, useThemeContext } from "./ThemeContext";
 import flights from "./components/FlightList";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+const PaytmView = lazy(() => import("./components/PaytmUI"));
+const GoibiboView = lazy(() => import("./components/GoibiboUI")); // Lazy load Goibibo
+const MakeMyTripView = lazy(() => import("./components/MakeMyTripUI")); // Lazy load MakeMyTrip
+const YatraView = lazy(() => import("./components/YatraUI"));
+const MusafirView = lazy(() =>import("./components/MusafirUI"));
 
 /**
  * The root component of the app, which renders the theme switcher and the appropriate
